@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors | Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header-container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="sub-heading">Digital Version</div>
+    </div>
+    <hr class="line-under-sub-heading">
+
+    <!-- Choices Section -->
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="images/rock.png" alt="Rock">
+        </div>
+        <div class="choice" id="paper">
+            <img src="images/paper.png" alt="Paper">
+        </div>
+        <div class="choice" id="scissor">
+            <img src="images/scissors.png" alt="Scissors">
+        </div>
+    </div>
+
+    <!-- Scoreboard Section -->
+    <div class="score-board">
+        <div class="score">
+            <p id="userscore">0</p>
+            <p>User</p>
+        </div>
+        <div class="score">
+            <p id="computerscore">0</p>
+            <p>Comp</p>
+        </div>
+    </div>
+
+    <!-- Message Section -->
+    <div class="msg-container">
+        <p id="message">Play your turn</p>
+    </div>
+
+    <!-- Portfolio Link Section -->
+    <div class="portfolio-link">
+        <a href="https://portfolio-nine-smoky-39.vercel.app/">Build by Rohail</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+    <script>
+        // Remove the loading screen after 2 seconds
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById("loading-screen").style.display = 'none';
+            }, 1500); // 2 seconds delay
+        }
+    </script>
+</body>
+</html>
